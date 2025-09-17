@@ -10,7 +10,7 @@ class Solution
         if (r < 0 || r >= n || c < 0 || c >= m || visited[r][c] || grid[r][c] == 0) return;
 
         visited[r][c] = 1;
-        order.push_back(pos);
+        order.push_back(pos);   
 
         dfs(r-1, c, 'u', grid, visited, order); // up
         dfs(r, c+1, 'r', grid, visited, order); // right
